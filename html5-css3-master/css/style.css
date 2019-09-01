@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4f4f4;
+    font: 15px/1.5 Arial, Helvetica, sans-serif
+}
+.icon{
+    display: none;
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background: #353637;
+    padding: 28px;
+    border-bottom: 3px solid #32a0c2;
+}
+header h1{
+    color: #fff;
+    font-weight: bold;
+}
+header h1 span{
+    color: #32a0c2;
+    margin: 0 10px;
+}
+.nav-bar ul{
+    list-style: none; 
+    height: 100%;
+    display: flex;
+}
+.nav-bar ul li{
+    display: flex;
+    align-items: center;
+}
+.nav-bar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+}
+.nav-bar ul li:first-child a{
+    color: #32a0c2;
+    font-weight: bold;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.section-main{
+    height: 400px;
+    background: url(../img/headerbg.jpg) center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.section-main .article {
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+}
+.section-main .article h1{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+.section-main .article p{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.section-bottom{
+    background: #353637;
+    padding: 15px;
+    color: #fff;
+}
+.section-bottom .article p{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.section-bottom .article{
+    display: flex;
+    justify-content: space-between;
+/*    margin: 15px;*/
+}
+.section-bottom .article p input, .section-bottom .article p button{
+    padding: 10px;
+    margin: 0 2px;
+}
+.section-bottom .article p input{
+    width: 250px;
+}
+.section-bottom .article p button{
+    background:#cccccc;
+    color: #353637;
+}
+main{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-around;
+}
+main article{
+    width: 30%;
+    text-align: center;
+}
+main article h4{
+    font-size: 18px;
+    padding: 10px 0 12px;
+}
+@media (max-width: 768px) {
+    header{
+        padding: 18px 0 10px;
+    }
+    .header-top{
+        display: block;
+    }
+    .header-top .titulo{
+        text-align: center;
+    }
+    .nav-bar ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .section-main{
+        height: 300px;
+    }
+    .section-main .article{
+        width: 100%;
+    }
+    .section-main .article h1{
+        font-size: 2.5em;
+    }
+    .section-main .article p{
+        font-weight: normal;
+        font-size: 1em;
+    }
+    .section-bottom{
+        padding: 5px;
+    }
+    main{
+        padding: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main article{
+        width: 45%;
+        margin: 10px 0;
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+}
+@media (max-width: 400px){
+    header{
+        padding: 8px 0 0px;
+    }
+    .section-main{
+        height: 200px;
+    }
+    .section-main .article h1{
+        font-size: 1.2em;
+    }
+    .section-main .article p{
+        display: none;
+    }
+    .section-bottom{
+        padding: 0px;
+    }
+    .section-bottom .article p{
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .section-bottom .article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .section-bottom .article p input, .section-bottom .article p button{
+        padding: 8px;
+        margin: 0 2px;
+    }
+    .section-bottom .article p input{
+        width: 170px;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main article{
+        width: 90%;
+        margin: 5px 0;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .nav-bar ul{
+        height: 100%;
+        display: block;
+        position: fixed;
+        left: -80%;
+        margin-top: 3px;
+        width: 80%;
+        background: rgba(0,0,0,0.6);
+        transition: all .3s ease-in-out;
+    }
+    .nav-bar ul li{
+        border-bottom: 1px solid #32a0c2;
+    }
+    .nav-bar ul li:first-child{
+        border-left: 5px solid #32a0c2;
+    }
+    .nav-bar ul li a{
+        transition: all .3s ease-in-out;
+    }
+    .nav-bar ul li:hover a{
+        margin-left: 15px;        
+    }
+    .icon{
+        transition: all .3s ease-in-out;
+        display: block;
+        position: fixed;
+        left: 0;
+/*        margin-left: 80%;*/
+        padding: 4px 7px;
+        margin-top: 3px;
+        text-align: center;
+        background: #32a0c2;
+        cursor: pointer;
+    }
+    .icon span{
+        color: #fff;
+        font-size: 25px;
+    }
+    .nav-bar .animar-menu{
+        left: 0;
+    }
+    .animar-icon{
+        margin-left: 80%;
+    }
+    .nav-bar .scroll-menu{
+        top: 0;
+        margin-top: 0px;
+    }
+    .scroll-icon{
+        top: 0;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

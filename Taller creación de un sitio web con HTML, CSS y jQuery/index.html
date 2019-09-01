@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, user-scalable-no, initial-scale-1.0, maximum-scale-1.0, minimum-scale-1.0">
+        <title></title>
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="description" content="">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    </head>
+    <body id="inicio">
+    <header>
+        <section class="contenedor">
+            <div id="anima"></div>
+            <h1>Nómadas</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, in.</h2>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li class="inicio"><a href="">Home</a></li>
+            <li class="blog"><a href="">Blog</a></li>
+            <li class="formulario"><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section class="contenedor">
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton1"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton2"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton3"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton4"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton5"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton6"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton7"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton8"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+        <article>
+            <div>
+                <p>Mas informaci&oacute;n <span class="arrow-down"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, debitis!</p>
+                <p id="boton9"><a href="">Contacta al autor</a></p>
+            </div>
+            <h1>Puente Golden Gate - EEUU</h1>
+        </article>
+    </section>
+    <footer>
+        <section class="contenedor">
+            <p>Nòmadas</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing. <a href="">www.ciriusblb.com</a> Lorem ipsum dolor sit amet, consectetur adipisicing <a href="">www.hebiusblb.com</a><p>
+        </section>
+    </footer>
+    </body>
+    <script type="application/javascript">
+           $(function(){
+                $('section article div p:first-child').on('click',function(){
+                    $(this).parent().toggleClass("animar"); 
+                    if($(this).children("span").hasClass("arrow-down")){
+                        $(this).children("span").removeClass("arrow-down").addClass("arrow-up");
+                    }else{
+                        $(this).children("span").removeClass("arrow-up").addClass("arrow-down");
+                    }
+//                    $(this).children(".arrow-down").toggleClass("arrow-up");
+                    $(this).parent().parent().children("h1").slideToggle("slow");     
+                });
+           }())
+        </script>
+</html>

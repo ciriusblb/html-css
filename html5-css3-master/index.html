@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable Web Design For Small And Medium-Sized Companies">
+    <meta name="author" content="Sebastian Eschweiler">
+    <title>1-2-3 Web Design - Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </head>
+  <body>
+  <header>
+     <div class="contenedor">
+        <div class="header-top">
+            <div class="titulo">
+                <h1><i class="fa fa-rocket"></i><span>1-2-3</span>Web Design</h1>
+            </div>
+            <div class="icon" id="icon">
+                <span class="fa fa-bars"></span>
+            </div>
+            <nav class="nav-bar">
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+  </header>
+  <section class="section-main">
+      <div class="contenedor">
+          <div class="article">
+              <h1>Affordable Web Design For Small And Medium-Sized Companies</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero cum tempore, consequuntur culpa repellendus perspiciatis, atque corporis a ut nobis ratione odit tenetur nesciunt asperiores expedita eius sed, neque optio.</p>
+          </div>
+      </div>
+  </section>
+  <section class="section-bottom">
+     <div class="contenedor">
+         <div class="article">
+             <p>Get Our Newsletter</p>
+             <p><input type="text" placeholder="input your email address"><button>Suscribete</button></p>
+         </div>
+     </div>
+    </section>
+  <main class="contenedor">
+        <article>
+            <span class="fa fa-signal fa-5x"></span>
+            <h4>Grow Your Audience</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut sed a! Earum voluptas, repudiandae possimus, quos tempore fugiat, veniam ipsam doloremque sed maxime libero blanditiis sint sunt pariatur reprehenderit!</p>
+        </article>
+        <article>
+            <span class="fa fa-photo fa-5x"></span>
+            <h4>Modern Web Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut sed a! Earum voluptas, repudiandae possimus, quos tempore fugiat, veniam ipsam doloremque sed maxime libero blanditiis sint sunt pariatur reprehenderit!</p>
+        </article>
+        <article>
+            <span class="fa fa-cube fa-5x"></span>
+            <h4>Ultra-Fast Hosting</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ut sed a! Earum voluptas, repudiandae possimus, quos tempore fugiat, veniam ipsam doloremque sed maxime libero blanditiis sint sunt pariatur reprehenderit!</p>
+        </article>
+    </main>
+  </body>
+  <script type="application/javascript">
+   $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('#menu').addClass('scroll-menu');
+            $('#icon').addClass('scroll-icon');
+        }else{
+            $('#menu').removeClass('scroll-menu');
+            $('#icon').removeClass('scroll-icon');
+        }
+    })
+    var btnMenu = document.getElementById('icon');
+    var nav = document.getElementById('menu');
+    btnMenu.addEventListener('click', function(){
+        nav.classList.toggle('animar-menu');
+        btnMenu.classList.toggle('animar-icon');
+    });
+    </script>
+</html>
